@@ -1,0 +1,11 @@
+Input Sku List,,,,,,
+"Directions: Please add source list SKUs into the following columns, and save as .xls, .xlsx or .csv.",,,,,,
+,,,,,,
+Sku,Code,Brand Name,Description,Description 2,Unit of Measure,Price
+"Optional: If you have your own SKU index, you can add it in this column.","Recommended. Add your product code in this column. Manufacturer product codes perform the best. UPC, GTIN, EAN, or any other code types that are likely to match Amazon listings can be placed in this column. If you have any secondary codes, please add them to the Additional Product Text column. ","Recommended. Add the brand in this column. If there is no brand, you can add the manufacturer.",Required. Add the product title here. Unit of Measure information can be included here or in the unit of measure column. ,"Optional. This column is used alongside the product description, brand, and code fields to determine matches. If your source list has additional codes or additional description information, you can add it here.","Recommended. If the products are sold individual, please mark this column as ""Sold Individually."" If the product is sold in bulk, we need to know what the selling units are; e.g., ""6 boxes per case."" 
+
+Note: the AI will interpret your units as long as a human can. You can also include this data in the product description column if it's more convenient.","Required. Provide the price of the product. This should match the unit of measure, which we will use this to calculate the cost of goods sold. "
+S9DL503ILZ,025500000886,Folgers,FLGR DECAF CLSC RST INST CFE,COFFEE - MIX/INSTANT - FLAVORED OR,SELL_SIZE_8_SELL_UOM_OZ,6.38
+SIMSI045XN,025500304311,Folgers,FLGR HALF CAFF,COFFEE - GROUND,SELL_SIZE_9.6_SELL_UOM_OZ,4.57
+SJ9HQJTB8Y,025500200446,Folgers,FLGR GRMT BLK SLK KCUP,COFFEE - SINGLE BREW,SELL_SIZE_12_SELL_UOM_CT,6.18
+SY3G3JBUJ7,025500000343,Folgers,FLGR INST CFE CLSC RST,COFFEE - MIX/INSTANT - FLAVORED OR,SELL_SIZE_8_SELL_UOM_OZ,5.87

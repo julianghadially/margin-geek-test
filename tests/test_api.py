@@ -1,3 +1,18 @@
+'''
+Documentation:
+Test Margin Geek API
+
+Tests a live api based on the app_mode (dev or prod). 
+
+Dev endpoint: https://dev-api.margingeek.com (Not always running)
+prod endpoint: https://api.margingeek.com
+
+Cron will run on prod hourly
+'''
+#To Run:
+#   pytest tests/test_api.py -v
+
+
 import pytest
 #from flask_testing import TestCase
 import json
@@ -7,9 +22,9 @@ import sys
 import requests
 import pymongo
 from pymongo.server_api import ServerApi
-from time import time
+from time import time, sleep
 
-os.environ['APP_MODE'] = 'dev'
+#os.environ['TEST_APP_MODE'] = 'dev'
 mongo_key = os.environ.get('MONGODB_KEY')
 
 mongo = 'mongodb+srv://julianghadially:'+mongo_key+'@amati0.xwuxtdi.mongodb.net/?retryWrites=true&w=majority&authSource=admin'
@@ -31,9 +46,10 @@ free_customer_id_prod = "cus_QzjqmsH9lWZ5Zn"    # It is okay to update the balan
 
 #=====================================
 #Functions used
-#=======================
+#=====================================
 
 def update_balance(customer_id, balance = None, rows = None):
+    '''Update balance for test accounts'''
     try:
         record = db_customers.customers.find_one({'customer_id':customer_id})
         if record == None:
@@ -148,7 +164,7 @@ class TestMarginGeekAPI:
         data = {
             "client_id": self.test_client_id,
         }
-        files = {'file': open('tasks/Product Scanner/Input/9002/Folgerstest - highlights.csv', 'rb')}
+        files = {'file': open('Input/Folgerstest - highlights.csv', 'rb')}
         
         response = requests.post(
             f'{self.api_host}/validate-scan',
@@ -164,7 +180,7 @@ class TestMarginGeekAPI:
         """Test checking scan validation status"""
         # First submit a validation
         data = {"client_id": self.test_client_id}
-        files = {'file': open('tasks/Product Scanner/Input/9002/Folgerstest - highlights.csv', 'rb')}
+        files = {'file': open('Input/Folgerstest - highlights.csv', 'rb')}
         
         submit_response = requests.post(
             f'{self.api_host}/validate-scan',
@@ -350,6 +366,7 @@ class TestMarginGeekAPI:
         ]
 
         for test_case in test_cases:
+            sleep(.1)
             # Add common settings fields
             test_case["settings"].update({
                 "Batch Name": "MG",
