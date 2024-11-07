@@ -5,6 +5,8 @@ __pycache__
 .env
 *.so
 .Python
+.gitignore
+.git
 *.log
 Input/*.xlsx
 Input/*.xls

@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  api-cron-tests:
+    build: .
+    environment:
+      - TEST_APP_MODE=prod
+    volumes:
+      - s-volume:/env/bin  # Mount the s drive containing the MongoDB key
+    command: sh -c "export MONGODB_KEY=\$$(cat /s/mongodb_key) && cron -f"
