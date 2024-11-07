@@ -26,6 +26,10 @@ from time import time, sleep
 
 #os.environ['TEST_APP_MODE'] = 'dev'
 mongo_key = os.environ.get('MONGODB_KEY')
+if mongo_key is None:
+    with open("env/bin/secrets.json", 'r') as file:
+        secrets = json.load(file)
+    mongo_key = secrets['MONGODB_KEY']
 
 mongo = 'mongodb+srv://julianghadially:'+mongo_key+'@amati0.xwuxtdi.mongodb.net/?retryWrites=true&w=majority&authSource=admin'
 mongo_c = pymongo.MongoClient(mongo,server_api=ServerApi('1'))

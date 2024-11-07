@@ -2,9 +2,13 @@ version: '3'
 
 services:
   api-cron-tests:
-    build: .
+    image: registry.digitalocean.com/margingeek/mg-tests:0.1
     environment:
       - TEST_APP_MODE=prod
     volumes:
       - s-volume:/env/bin  # Mount the s drive containing the MongoDB key
-    command: sh -c "export MONGODB_KEY=\$$(cat /s/mongodb_key) && cron -f"
+    command: sh -c "cron && tail -f /var/log/cron.log"
+    restart: unless-stopped
+volumes:
+  s-volume:
+    external: true

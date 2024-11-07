@@ -9,12 +9,13 @@ RUN pip install -r requirements.txt
 
 COPY run_tests.py .
 COPY tests/ ./tests/
+COPY Input/*.csv ./Input/ 
 
-RUN echo "0 * * * * cd /app && python run_tests.py >> /var/log/cron.log 2>&1" > /etc/cron.d/test-cron
+RUN echo "0 * * * * cd /app && python run_tests.py >> /var/log/cron.log 2>&1" > /etc/cron.d/api-cron-tests
 RUN chmod 0644 /etc/cron.d/api-cron-tests
-
 RUN crontab /etc/cron.d/api-cron-tests
 
 RUN touch /var/log/cron.log
+RUN chmod 0666 /var/log/cron.log
 
-CMD ["cron", "-f"]
+CMD cron && tail -f /var/log/cron.log
