@@ -11,11 +11,13 @@ COPY run_tests.py .
 COPY tests/ ./tests/
 COPY Input/*.csv ./Input/ 
 
-RUN echo "0 * * * * cd /app && python run_tests.py >> /var/log/cron.log 2>&1" > /etc/cron.d/api-cron-tests
+RUN which python > /python_path
+RUN echo "0 * * * * cd / && $(cat /python_path) /run_tests.py >> /var/log/cron.log 2>&1" > /etc/cron.d/api-cron-tests
 RUN chmod 0644 /etc/cron.d/api-cron-tests
 RUN crontab /etc/cron.d/api-cron-tests
 
 RUN touch /var/log/cron.log
 RUN chmod 0666 /var/log/cron.log
 
-CMD cron && tail -f /var/log/cron.log
+RUN echo "PATH=/usr/local/bin:/usr/bin:/bin" >> /etc/environment
+CMD ["sh", "-c", "cron && tail -f /var/log/cron.log"]

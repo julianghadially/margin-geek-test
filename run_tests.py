@@ -9,15 +9,17 @@ from typing import List, Dict
 import json
 
 
-mongo_key = os.environ.get('MONGODB_KEY')
+mongo_key = os.environ.get('MONGODBTESTER_KEY')
 if mongo_key is None:
     with open("env/bin/secrets.json", 'r') as file:
         secrets = json.load(file)
-    mongo_key = secrets['MONGODB_KEY']
+    mongo_key = secrets['MONGODBTESTER_KEY']
     
-mongo = 'mongodb+srv://julianghadially:'+mongo_key+'@amati0.xwuxtdi.mongodb.net/?retryWrites=true&w=majority&authSource=admin'
+mongo = 'mongodb+srv://tester:'+mongo_key+'@amati0.xwuxtdi.mongodb.net/?retryWrites=true&w=majority&authSource=admin'
 mongo_c = pymongo.MongoClient(mongo,server_api=ServerApi('1'))
 db_logs = mongo_c.get_database('logs') 
+
+#result = db_logs.test_results.delete_one({})
 
 app_mode = os.environ.get('TEST_APP_MODE')
 
@@ -56,8 +58,18 @@ class TestResultCollector:
 
 def log_test_results(results):
     """Store test results in MongoDB"""
-    failed_tests = ", ".join(results['failed_tests'])
-    failed_test_details = "  |||  ".join(results['failed_test_details'])
+    if type(results['failed_tests']) is list:
+        failed_tests = ", ".join(results['failed_tests'])
+    else:
+        failed_tests = ", ".join(str(results['failed_tests']))
+    if type(results['failed_test_details']) is list:
+        failed_test_details = "  |||  ".join(results['failed_test_details'])
+    else:
+        failed_test_details = str(results['failed_test_details'])
+    if len(str(failed_test_details))>10000:
+        failed_test_details = failed_test_details[0:10000]
+    if len(str(failed_tests))>10000:
+        failed_tests = failed_tests[0:10000]
     
 
     log_record = {

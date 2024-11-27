@@ -6,7 +6,7 @@ services:
     environment:
       - TEST_APP_MODE=prod
     volumes:
-      - s-volume:/env/bin  # Mount the s drive containing the MongoDB key
+      - s-volume:/env/bin  # Mount the s-volume at /env/bin in the container
     command: sh -c "cron && tail -f /var/log/cron.log"
     restart: unless-stopped
 volumes:
