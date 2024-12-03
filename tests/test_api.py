@@ -103,11 +103,11 @@ class TestMarginGeekAPI:
         else:
             print('Running tests in dev')
             self.is_dev = True
-            self.api_host = 'http://127.0.0.1:5000'  # Change to dev-api.margingeek.com for dev testing
+            self.api_host = 'https://dev-api.margingeek.com:444' #'http://127.0.0.1:5000'  # Change to https://dev-api.margingeek.com:444 for dev testing
             self.headers = {"Origin": "https://margin-geek-portal.vercel.app"}
-            self.test_customer_id = premium_customer_id  # Use a test customer ID
+            self.test_customer_id = premium_customer_id # Use a test customer ID
             self.test_client_id = "9002"
-            self.premium_customer_id = premium_customer_id  # Use a test customer ID
+            self.premium_customer_id = premium_customer_id # Use a test customer ID
             self.premium_client_id = "9002"
             self.free_customer_id = free_customer_id  # Use a test customer ID
         
