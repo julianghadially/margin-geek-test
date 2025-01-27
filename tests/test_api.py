@@ -42,10 +42,9 @@ latest_base_cost = 0.01
 latest_ai_cost = 0.003
 latest_qa_cost = 0.01
 latest_expedited_cost = 0.005
-premium_customer_id = "cus_QcwLkv0EVqYtYs"      # It is okay to update the balance / rows for these customers, but only these customers
-free_customer_id = "cus_QziFoGqYoOjJKb"         # It is okay to update the balance / rows for these customers, but only these customers
-premium_customer_id_prod = "cus_QdBn80R17gnunh" # It is okay to update the balance / rows for these customers, but only these customers
-free_customer_id_prod = "cus_QzjqmsH9lWZ5Zn"    # It is okay to update the balance / rows for these customers, but only these customers
+
+# It is okay to update the balance / rows for these customers, but only these customers:
+from context.globals import premium_customer_id_dev, free_customer_id_dev, premium_customer_id_prod, free_customer_id_prod      
 
 
 #=====================================
@@ -105,11 +104,11 @@ class TestMarginGeekAPI:
             self.is_dev = True
             self.api_host = 'https://dev-api.margingeek.com:444' #'http://127.0.0.1:5000'  # Change to https://dev-api.margingeek.com:444 for dev testing
             self.headers = {"Origin": "https://margin-geek-portal.vercel.app"}
-            self.test_customer_id = premium_customer_id # Use a test customer ID
+            self.test_customer_id = premium_customer_id_dev # Use a test customer ID
             self.test_client_id = "9002"
-            self.premium_customer_id = premium_customer_id # Use a test customer ID
+            self.premium_customer_id = premium_customer_id_dev # Use a test customer ID
             self.premium_client_id = "9002"
-            self.free_customer_id = free_customer_id  # Use a test customer ID
+            self.free_customer_id = free_customer_id_dev  # Use a test customer ID
         
 
     def test_health_check(self):

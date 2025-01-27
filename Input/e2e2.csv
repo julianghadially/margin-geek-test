@@ -1,0 +1,16 @@
+﻿End-to-End-Testing,,,,,,,,,,,,,,
+"These examples are based on test cases from match history, and serves multiple purposes: measure recall, and rescore match/CF accuracy in production",,,,,,,,,,,,,,
+Mapped to SKU only,Not Mapped,Not Mapped,,,,,,Not Mapped,,,Not Mapped,Not Mapped,Not Mapped,
+MG Index,ASIN Cheat Sheet,CF Cheat Sheet,Brand_left,Code_left,Codetype_left,Title_left,Description_left,Pricing Units,Purchase Price Units,Purchase Price,Date,Train,Train_CF,Note
+10020000113-B004URLB16,B004URLB16,1,Poly,61578-01,mfg_ref_code,"Mounting Tape, HL10",by Poly (formerly Plantronics). 86H63AA,Each,Each,$3.22 ,20240401,test,test,Repeat with e2e1
+10020000951-B00MOI1MJO,B00MOI1MJO,1,Yealink,YEA-WMB-T48,mfg_ref_code,Wall Mount Bracket for T48,,Each,Each,$5.50 ,20240401,test,test,Repeat with e2e1
+10020000956-B01M0TPM70,B01M0TPM70,0.5,Yealink,YEA-W56H,mfg_ref_code,Yealink IP DECT Add-on Phone W56H,,Each,Each,$75.00 ,20240401,test,test,Repeat with e2e1
+90000000100-B0CN1RM2CQ,B0CN1RM2CQ,0.125,Vaseline,859581006846,upc,Vaseline Lip Therapy Original 0.16oz,,Each,Each,$0.99 ,20240715,test,test,Repeat with e2e1
+100800000888-B01IA9BEQG,B01IA9BEQG,0.09,Neutrogena,070501013007,UPC,Neutrogena Fragrance Free Norwegian Formula Hand Cream,,Each,Each,$4.90 ,20241113,,test,Repeat with e2e1
+100800086367-B0012BY26Y,B0012BY26Y,0.333,BOERICKE & TAFEL,308078250977,UPC,BOERICKE & TAFEL_ARNIFLORA ARNICA GEL 2.75OZ,,Each,Each,$8.85 ,20241113,test,test,Repeat with e2e1
+10040000885-B0CN1R9JGK,B0CN1R9JGK,0.333,,47400686113,UPC,Gillette,Gillette/Spray Deodorant/Tropical Breeze/12/4.3/oz,,Each,$3.16 ,20241100,GB1-1000,not in train (for sure),e2e2 only
+10040000469-B01K9I068S,B01K9I068S,1,,30772086858,UPC,Bounty,Bounty//Select A Size White/12/86/sh,,Each,$2.10 ,20241100,GB1-1000,not in train (for sure),e2e2 only
+10040000865-B0CRF9TK2F,B0CRF9TK2F,0.25,,79400509260,UPC,Degree,Degree/Deodorant/Men Advanced Iced Eucalyptus/12/2.7/oz,,Each,$2.42 ,20241100,GB1-1000,not in train (for sure),e2e2 only
+100800001157-B007WSVLW4,B007WSVLW4,0.167,,5310034112587000205658,UPC,Aquafresh,Aquafresh/Extreme Clean/Pure Breath Action Fresh Mint/12/5.6/oz,,Each,$2.37 ,20241100,,test,e2e2 only
+100800001166-B082F1MGLZ,B082F1MGLZ,1,,35000972316,UPC,Colgate,Colgate/Optic White/Advanced Sparkling White 2pk/12/4.5/oz,,Each,$6.00 ,20241100,,test,e2e2 only
+100800001176-B0014CV606,B0014CV606,1,,35000525413,UPC,Colgate,Colgate/Toothpaste/Sensitive Whitening/24/6/oz,,Each,$2.74 ,20241100,,test,e2e2 only

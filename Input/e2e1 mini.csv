@@ -1,0 +1,13 @@
+﻿End-to-End-Testing,,,,,,,,,,,,,
+"These examples are based on test cases from match history, and serves multiple purposes: measure recall, and rescore match/CF accuracy in production",,,,,,,,,,,,,
+Not Mapped,Not Mapped,Not Mapped,,,,,,Not Mapped,,,Not Mapped,Not Mapped,Not Mapped
+MG Index,ASIN Cheat Sheet,CF Cheat Sheet,Brand_left,Code_left,Codetype_left,Title_left,Description_left,Pricing Units,Purchase Price Units,Purchase Price,Date,Train,Train_CF
+10000013770-B07NBR4LCB,B07NBR4LCB,6,CREST,10037000401596,upc,CREST KIDS SPARKLE TRIAL SIZE UNBOXED .85 OZ 72/CA,,Unit of Measure,CASE,$16.56 ,20240401,test,test
+10000020415-B07X4Z9FMP,B07X4Z9FMP,1,GOJO,5665-02,mfg_ref_code,5665-02: CLEANSER HAND FOAM TFX 1200ML CLEAR 2/CA,,Unit of Measure,CASE,$46.69 ,20240401,test,test
+100800003068-B00HKIBN7E,B00HKIBN7E,1,Alo Drink,812475011296,UPC,"Alo Drink Comfort Aloe Watermelon & Peach, 16.9 Fluid Ounces",,Unit of Measure,Unit of Measure: Case. Pack Size: 12 x 16.9 Fo,$18.64 ,20241125,,test
+100800003505-B01N0WY04O,B01N0WY04O,10,Stix To Go,72288141263,UPC,"Royal 4.75"" Stir Sticks Plug Red, 200 Each",,Unit of Measure,Unit of Measure: Case. Pack Size: 10 x 200 Ea,$82.68 ,20241125,,test
+100800004573-B00260JOYK,B00260JOYK,10,Royal,72288116964,UPC,"Royal 7.5 Inch Wood Coffee Stirrer, 500 Each",,Unit of Measure,Unit of Measure: Case. Pack Size: 10 x 500 Ea,$37.79 ,20241125,,test
+100800005625-B01MRXQNJ3,B01MRXQNJ3,3,Sour Punch,10041364086955,GTIN,"Sour Punch Strawberry, Watermelon, Cherry, And Raspberry Bites Shipper, 9 Ounce",,Unit of Measure,Unit of Measure: Case. Pack Size: 36 x 9 Oz,$64.80 ,20241125,,test
+100800005712-B01MRXQNJ3,B01MRXQNJ3,1,Sour Punch,10041364187072,GTIN,"Sour Punch Rad Reds Bites, 9 Ounce",,Unit of Measure,Unit of Measure: Case. Pack Size: 12 x 9 Oz,$26.52 ,20241125,,test
+100800014206-B076DJWW4W,B076DJWW4W,24,Mint Twist,10041168398001,GTIN,"Atkinson Candy Company Crushed Red & White Mint For Baking, 8 Ounces",,Unit of Measure,Unit of Measure: Case. Pack Size: 24 x 8 Oz,$42.72 ,20241125,,test
+100800014447-B077Y6FXHJ,B077Y6FXHJ,8.31,Mint Twists,10041168391477,GTIN,"Mint Twists Candy Red & White Mint Stick Changemaker, 0.7 Ounce",,Unit of Measure,Unit of Measure: Case. Pack Size: 12 x 36 x 0.7 Oz,$68.04 ,20241125,,

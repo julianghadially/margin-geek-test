@@ -21,7 +21,7 @@ db_logs = mongo_c.get_database('logs')
 
 #result = db_logs.test_results.delete_one({})
 
-app_mode = os.environ.get('TEST_APP_MODE')
+app_mode = os.environ.get('TEST_APP_MODE','prod')
 
 class TestResultCollector:
     def __init__(self):

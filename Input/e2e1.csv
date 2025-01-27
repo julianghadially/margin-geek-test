@@ -1,0 +1,98 @@
+﻿End-to-End-Testing,,,,,,,,,,,,,
+"These examples are based on test cases from match history, and serves multiple purposes: measure recall, and rescore match/CF accuracy in production",,,,,,,,,,,,,
+Not Mapped,Not Mapped,Not Mapped,,,,,,Not Mapped,,,Not Mapped,Not Mapped,Not Mapped
+MG Index,ASIN Cheat Sheet,CF Cheat Sheet,Brand_left,Code_left,Codetype_left,Title_left,Description_left,Pricing Units,Purchase Price Units,Purchase Price,Date,Train,Train_CF
+10000013770-B07NBR4LCB,B07NBR4LCB,6,CREST,10037000401596,upc,CREST KIDS SPARKLE TRIAL SIZE UNBOXED .85 OZ 72/CA,,Unit of Measure,CASE,$16.56 ,20240401,test,test
+10000020415-B07X4Z9FMP,B07X4Z9FMP,1,GOJO,5665-02,mfg_ref_code,5665-02: CLEANSER HAND FOAM TFX 1200ML CLEAR 2/CA,,Unit of Measure,CASE,$46.69 ,20240401,test,test
+10000021973-B073WBY3KF,B073WBY3KF,10,PDI,D43600,mfg_ref_code,D43600: SANI HANDS POCKET PACKET 65.9% ALCO 100/PK 10PK/CA,,Unit of Measure,CASE,$39.24 ,20240401,test,test
+10000020307-B00569AGFE,B00569AGFE,1,PURELL,3900-25-BWL,mfg_ref_code,3900-25-BWL: PURELL JW ADVANCED HAND SANITIZER 1OZ BOWL 25/CA,,Unit of Measure,CASE,$25.02 ,20240401,test,test
+10000022212-B0C4ZHJK8T,B0C4ZHJK8T,1,THERABAND,23323,mfg_ref_code,23323: +TRAINER STABLIZER BLACK XTRA-SOFT 1/BX 6/CA,,,BOX,$34.59 ,20240401,,n/a
+10000022157-B0BW61MSV2,B0BW61MSV2,1,THERABAND,21434,mfg_ref_code,21434: +THERABAND BLACK ADVANCED 12/CA,,Unit of Measure,EACH,$13.61 ,20240401,test,test
+10000001761-B07Z422JK1,B07Z422JK1,8,MEDLINE,NON21450H,mfg_ref_code,PADS ABD STERILE 5 X 9 25/BX 16BX/CA,,Unit of Measure,CASE,$32.26 ,20240401,test,test
+10000001005-B007CLRHDS,B007CLRHDS,1,GEORGIA-PACIFIC,80534,mfg_ref_code,WASHCLOTH 13X13 50/POLY 1000/CA,,Unit of Measure,CASE,$44.55 ,20240401,test,test
+10000001167-B00F4JITUA,B00F4JITUA,1,ICU MEDICAL,C1000,mfg_ref_code,CONNECTOR CLAVE CS/100,,Unit of Measure,CASE,$74.55 ,20240401,test,test
+10020000879-B00DBCJK64,B00DBCJK64,1,Logitech,981-000511,mfg_ref_code,WIRELESS HEADSET MONO H820E,,Each,Each,$120.48 ,20240401,test,test
+10020000113-B004URLB16,B004URLB16,1,Poly,61578-01,mfg_ref_code,"Mounting Tape, HL10",by Poly (formerly Plantronics). 86H63AA,Each,Each,$3.22 ,20240401,test,test
+10020000496-B0BXG41Y4K,B0BXG41Y4K,1,Logitech,988-000400,mfg_ref_code,"Yeti Nano Black, plus litra light manually added to COGS",,Each,Each,$119.24 ,20240401,test,test
+10020000951-B00MOI1MJO,B00MOI1MJO,1,Yealink,YEA-WMB-T48,mfg_ref_code,Wall Mount Bracket for T48,,Each,Each,$5.50 ,20240401,test,test
+10020000956-B01FD4YDFU,B01FD4YDFU,1,Yealink,YEA-W56H,mfg_ref_code,Yealink IP DECT Add-on Phone W56H,UPC Code: 841885104359,Each,Each,$75.00 ,20240401,test,test
+10020000956-B01M0TPM70,B01M0TPM70,0.5,Yealink,YEA-W56H,mfg_ref_code,Yealink IP DECT Add-on Phone W56H,,Each,Each,$75.00 ,20240401,test,test
+10020001048-B0BNQXW2HZ,B0BNQXW2HZ,0.2,Yealink,YEA-SIP-T54W-PWR,mfg_ref_code,SIP-T54W With Power Supply,,Each,Each,$139.00 ,20240401,test,test
+90000000100-B0CN1RM2CQ,B0CN1RM2CQ,0.125,Vaseline,859581006846,upc,Vaseline Lip Therapy Original 0.16oz,,Each,Each,$0.99 ,20240715,test,test
+90000000762-B00UF7KD1Y,B00UF7KD1Y,0.056,Airheads,152295,,Airheads Bites Candy 4oz Original-wholesale,"Home
+/
+CANDY
+/
+SOFT CANDY
+Airheads Bites Candy 4oz Original-wholesale
+SKU:
+152295
+Categories:
+CANDY
+,
+SOFT CANDY
+Tag:
+073390014483
+$
+1.14
+/
+lb
+Pack Cost:
+$
+20.52
+Airheads Bites Candy 4oz Original, wholesale, bulk  ‚Äì  Unit per pack 18
+Airheads Bites Candy 4oz Original-wholesale
+$
+1.14
+/
+lb
+Airheads Bites Candy 4oz Original-wholesale quantity
+BUY
+Units/Pack:
+18
+Item: 0 Sale",Each,Each,$1.14 ,20240723,test,test
+100800000888-B01IA9BEQG,B01IA9BEQG,0.09,Neutrogena,070501013007,UPC,Neutrogena Fragrance Free Norwegian Formula Hand Cream,,Each,Each,$4.90 ,20241113,,test
+100800001048-B07Z7H1ZV9,B07Z7H1ZV9,0.25,Dove,079400448217,UPC,Dove Men+care Stain Defense Cool Invisible Solid,,Each,Each,$6.89 ,20241113,,test
+100800001157-B007WSVLW4,B007WSVLW4,0.25,Aquafresh,5310034112587000205658,UPC,Aquafresh/Extreme Clean/Pure Breath Action Fresh Mint/12/5.6/oz,,Each,Each,$2.37 ,20241113,,test
+100800001166-B082F1MGLZ,B082F1MGLZ,1,Colgate,35000972316,UPC,Colgate/Optic White/Advanced Sparkling White 2pk/12/4.5/oz,,Each,Each,$6.00 ,20241113,,test
+100800001176-B0014CV606,B0014CV606,1,Colgate,35000525413,UPC,Colgate/Toothpaste/Sensitive Whitening/24/6/oz,,Each,Each,$2.74 ,20241113,,test
+100800081408-B08DJFR9YX,B08DJFR9YX,1,BUSY CO.,850000723474,UPC,BUSY CO._CALM XL BODY WIPES 10CT,,Each,Each,$5.95 ,20241113,test,test
+100800081737-B0054RSSKI,B0054RSSKI,1,CLEAR CONSCIENCE,663654862921,UPC,CLEAR CONSCIENCE_CONTACTLENS SOLTN MULTI 12OZ,,Each,Each,$7.15 ,20241113,test,test
+100800084054-B07PWYRPCR,B07PWYRPCR,1,HEALTH PLUS,83502103660,UPC,HEALTH PLUS_PROBIOTIC FIBER 30CAPSULE,,Each,Each,$11.80 ,20241113,test,test
+100800086348-B00A1FVGXE,B00A1FVGXE,0.167,TRADITIONAL MEDICINALS TEAS,32917002242,UPC,TRADITIONAL MEDICINALS TEAS_LEMON BALM TEA 16BAG,,Each,Each,$4.57 ,20241113,test,test
+100800086367-B0012BY26Y,B0012BY26Y,0.333,BOERICKE & TAFEL,308078250977,UPC,BOERICKE & TAFEL_ARNIFLORA ARNICA GEL 2.75OZ,,Each,Each,$8.85 ,20241113,test,test
+100800075516-B08QDQCYWN,B08QDQCYWN,1,ANIMA MUNDI APOTHECARY,850001669245,UPC,ANIMA MUNDI APOTHECARY_COLLAGEN BOOSTER FACE OIL DEEP MOISTURIZER 2OZ,,Each,Each,$27.88 ,20241113,test,test
+100800021364-B00R0OAW2K,B00R0OAW2K,1,Barilla,76808004205,UPC,"Barilla Gluten Free Penne Pasta, 12 Ounces",,Unit of Measure,Unit of Measure: Case. Pack Size: 8 x 12 Oz,$19.68 ,20241125,,test
+100800021465-B00T77QSVC,B00T77QSVC,1,Barnana,857682003061,UPC,"Barnana Coconut Banana Bites, 3.5 Ounces",,Unit of Measure,Unit of Measure: Case. Pack Size: 12 x 3.5 Oz,$37.08 ,20241125,,test
+100800021509-B086X78ZQ6,B086X78ZQ6,1,Barnana,843369101717,UPC,"Barnana Organic Himalayan Pink Salt Plantain Chips, 5 Ounce",,Unit of Measure,Unit of Measure: Case. Pack Size: 6 x 5 Oz,$17.34 ,20241125,,test
+100800023796-B07Q89YKZP,B07Q89YKZP,1,Beer Nuts Brand Snacks,70842701434,UPC,"Beer Nuts Original Sweet & Salty Peanuts, 12 Ounces",,Unit of Measure,Unit of Measure: Case. Pack Size: 12 x 12 Oz,$48.88 ,20241125,,test
+100800024902-B06VYGZ3Z7,B06VYGZ3Z7,1,Biena Snacks,857597003453,UPC,"Biena Snacks Sea Salt Chickpeas, 5 Ounce",,Unit of Measure,Unit of Measure: Case. Pack Size: 8 x 5 Oz,$24.40 ,20241125,,test
+100800047337-B07BZ2ZRFY,B07BZ2ZRFY,1,Snak Club,87076294663,UPC,"Snak Club Asian Style Snack Mix, 6.75 Ounce",,Unit of Measure,Unit of Measure: Case. Pack Size: 6 x 6.75 Oz,$12.54 ,20241125,,test
+100800047517-B07BYM1Q8R,B07BYM1Q8R,1,Super Value,87076494391,UPC,"Snak Club Sweet Salty Trail Mix, 8 Ounce",,Unit of Measure,Unit of Measure: Case. Pack Size: 6 x 8 Oz,$18.90 ,20241125,,test
+100800047724-B084S9KZ3X,B084S9KZ3X,1,Snak Club,87076657390,UPC,"Snak Club Tajin Crunchy Peanuts Family Size, 10.5 Ounce",,Unit of Measure,Unit of Measure: Case. Pack Size: 6 x 10.5 Oz,$23.88 ,20241125,,test
+100800047958-B0C8G8GX7H,B0C8G8GX7H,1,Snak Club,87076619060,UPC,"Snak Club Family Size-Tajin Gummy Bears, 9 Ounce",,Unit of Measure,Unit of Measure: Case. Pack Size: 6 x 9 Oz,$23.88 ,20241125,,test
+100800048007-B0CSGY42G8,B0CSGY42G8,1,Snak Club,87076299156,UPC,"Snak Club Hot Ones Smoky Sweet Snack Mix, 4.5 Ounce",,Unit of Measure,Unit of Measure: Case. Pack Size: 6 x 4.5 Oz,$12.54 ,20241125,,test
+100800061388-B07N6WLY9X,B07N6WLY9X,1,Perugina,839456004634,UPC,"Perugina Bittersweet Chocolate Bar, 3 Ounce",,Unit of Measure,Unit of Measure: Case. Pack Size: 12 x 3 Oz,$29.10 ,20241125,,test
+100800061445-B07N6WLTYY,B07N6WLTYY,1,Perugina,839456004597,UPC,"Perugina Milk Chocolate & Almonds Bar, 3 Ounce",,Unit of Measure,Unit of Measure: Case. Pack Size: 12 x 3 Oz,$29.10 ,20241125,,test
+100800061504-B084Y7MTZP,B084Y7MTZP,1,Baci Perugina,839456006072,UPC,"Baci Perugina Extra Dark 70% Chocolate Truffles, 4.4 Ounce",,Unit of Measure,Unit of Measure: Case. Pack Size: 4 x 4.4 Oz,$21.64 ,20241125,,test
+100800061449-B07N6YNKHY,B07N6YNKHY,1,Perugina,839456004573,UPC,"Perugina Milk Chocolate & Hazelnut Bar, 3 Ounce",,Unit of Measure,Unit of Measure: Case. Pack Size: 12 x 3 Oz,$29.10 ,20241125,,test
+100800064894-B00CHTTRCO,B00CHTTRCO,1,Lone Star,77777104002,UPC,"Lone Star Michigan Milk Grade A Nonfat Dry Milk, 50 Pound",,Unit of Measure,Unit of Measure: Case. Pack Size: 1 x 50 Lb,$101.15 ,20241125,,test
+100800067861-B000RI1W9S,B000RI1W9S,1,David,26200464701,UPC,"David Jalapeno Sunflower Seeds, 5.25 Ounce",,Unit of Measure,Unit of Measure: Case. Pack Size: 12 x 5.25 Oz,$17.85 ,20241125,,test
+100800069037-B004AJOGUM,B004AJOGUM,6,Krusteaz,41449300603,UPC,"Krusteaz Professional All Purpose Cookie Mix, 5 Pounds",,Unit of Measure,Unit of Measure: Case. Pack Size: 6 x 5 Lb,$61.63 ,20241125,,test
+100800074804-B00QJT6NO8,B00QJT6NO8,1,Del Monte,24000510710,UPC,"Del Monte Pears Sliced In Heavy Syrup, 15.25 Ounce",,Unit of Measure,Unit of Measure: Case. Pack Size: 12 x 15.25 Oz,$28.38 ,20241125,,test
+100800001677-B003GSBA5C,B003GSBA5C,6,Scotch,50051141913341,GTIN,"Scotch Transparent Tape 24 Pack, 1000 Inch",,Unit of Measure,Unit of Measure: Case. Pack Size: 6 x 1000 In,$211.41 ,20241125,,test
+100800001870-B007QEPGN4,B007QEPGN4,6,Scotch-Brite,50048011205057,GTIN,"Scotch Brite Cash And Carry Medium Duty Scrub, 1 Count",,Unit of Measure,Unit of Measure: Case. Pack Size: 6 x 1 Cnt,$120.78 ,20241125,,test
+100800002209-B005X9FNAA,B005X9FNAA,4,Ensure,70074572406,UPC,"Ensure Butter Pecan, 8 Fluid Ounce",,Unit of Measure,Unit of Measure: Case. Pack Size: 4 x 6 x 8 Fo,$43.36 ,20241125,,test
+100800002285-B00TJ5KET4,B00TJ5KET4,1,Fleischmanns,10040100000675,GTIN,"Fleischmanns Homemade Cornbread Mix, 15 Ounce",,Unit of Measure,Unit of Measure: Case. Pack Size: 6 x 15 Oz,$11.82 ,20241125,,test
+100800002379-B0CVS9D2HV,B0CVS9D2HV,6,Argo,10761720951399,GTIN,"Argo Corn Starch, 35 Ounces",,Unit of Measure,Unit of Measure: Case. Pack Size: 6 x 35 Oz,$25.26 ,20241125,,test
+100800003068-B00HKIBN7E,B00HKIBN7E,1,Alo Drink,812475011296,UPC,"Alo Drink Comfort Aloe Watermelon & Peach, 16.9 Fluid Ounces",,Unit of Measure,Unit of Measure: Case. Pack Size: 12 x 16.9 Fo,$18.64 ,20241125,,test
+100800003505-B01N0WY04O,B01N0WY04O,10,Stix To Go,72288141263,UPC,"Royal 4.75"" Stir Sticks Plug Red, 200 Each",,Unit of Measure,Unit of Measure: Case. Pack Size: 10 x 200 Ea,$82.68 ,20241125,,test
+100800004573-B00260JOYK,B00260JOYK,10,Royal,72288116964,UPC,"Royal 7.5 Inch Wood Coffee Stirrer, 500 Each",,Unit of Measure,Unit of Measure: Case. Pack Size: 10 x 500 Ea,$37.79 ,20241125,,test
+100800005625-B01MRXQNJ3,B01MRXQNJ3,3,Sour Punch,10041364086955,GTIN,"Sour Punch Strawberry, Watermelon, Cherry, And Raspberry Bites Shipper, 9 Ounce",,Unit of Measure,Unit of Measure: Case. Pack Size: 36 x 9 Oz,$64.80 ,20241125,,test
+100800005712-B01MRXQNJ3,B01MRXQNJ3,1,Sour Punch,10041364187072,GTIN,"Sour Punch Rad Reds Bites, 9 Ounce",,Unit of Measure,Unit of Measure: Case. Pack Size: 12 x 9 Oz,$26.52 ,20241125,,test
+100800006039-B06X18C7K8,B06X18C7K8,24,Red Vines,10041364246335,GTIN,"Red Vines Original Red Twists Licorice, 4 Ounce",,Unit of Measure,Unit of Measure: Case. Pack Size: 24 x 4 Oz,$23.52 ,20241125,,test
+100800013625-B0002AQTVW,B0002AQTVW,6,Anchor Hocking,10076440000112,GTIN,"Anchor Hocking Bowl Fish Two Gallon, 6 Each",,Unit of Measure,Unit of Measure: Case. Pack Size: 1 x 6 Ea,$75.92 ,20241125,,test
+100800013718-B09N7PRTDR,B09N7PRTDR,12,Zotz,20070650005827,GTIN,"Zotz Watermelon Fizz Candy, 46 Piece",,Unit of Measure,Unit of Measure: Case. Pack Size: 12 x 46 Pc,$26.88 ,20241125,,test
+100800014175-B074MJFC7D,B074MJFC7D,1,Major Peters',10024400477870,GTIN,"Major Peters Triple Sec Cocktail Mixer, 33.8 Ounce",,Unit of Measure,Unit of Measure: Case. Pack Size: 12 x 33.8 Oz,$40.51 ,20241125,,test
+100800014206-B076DJWW4W,B076DJWW4W,24,Mint Twist,10041168398001,GTIN,"Atkinson Candy Company Crushed Red & White Mint For Baking, 8 Ounces",,Unit of Measure,Unit of Measure: Case. Pack Size: 24 x 8 Oz,$42.72 ,20241125,,test
+100800014447-B077Y6FXHJ,B077Y6FXHJ,8.31,Mint Twists,10041168391477,GTIN,"Mint Twists Candy Red & White Mint Stick Changemaker, 0.7 Ounce",,Unit of Measure,Unit of Measure: Case. Pack Size: 12 x 36 x 0.7 Oz,$68.04 ,20241125,,
