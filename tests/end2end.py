@@ -32,8 +32,8 @@ def delete_pg(asin,db,display_deleted_count = True):
     if display_deleted_count:
         print(f"Deleted {deleted_count} records for {asin}")
     
-class TestMarginGeekAPI:
-    """Test suite for MarginGeek API endpoints"""
+class TestMarginGeekScanner:
+    """Test suite for MarginGeek scanner, end to end"""
     
     @pytest.fixture(autouse=True)
     def setup(self,command_line_args):
@@ -48,11 +48,13 @@ class TestMarginGeekAPI:
             if 'mode' in command_line_args.keys():
                 mode = command_line_args["mode"]
                 if str(mode).lower() in ['prod','dev']:
+                    print(f"setting app_mode to {str(mode).lower()}")
                     self.app_mode = str(mode).lower()
             if 'mini' in command_line_args.keys():
                 mini = command_line_args["mini"]
             if 'location' in command_line_args.keys():
-                location = command_line_args["location"]
+                location = command_line_args["location"] #local or nothing
+                print(f"setting location to {location}")
         except Exception as error:
             print(f"WARNING: not using passed arguments {error}")
         self.local = str(location).lower() == 'local'
@@ -86,6 +88,7 @@ class TestMarginGeekAPI:
             self.main_client = premium_client_id_dev
         self.file1 = 'e2e1.csv'
         if mini is not None:
+            print('Using mini file for e2e1')
             self.file1 = 'e2e1 mini.csv'
         
 
@@ -93,6 +96,7 @@ class TestMarginGeekAPI:
         """
         Example of running multiple test cases in an End-to-End style
         """
+        print('starting end 2 end completion test')
         # Grab secrets for DigitalOcean and Mongo
         dospaces_key = os.environ.get('DIGITAL_OCEAN_SPACES')
         mongo_key = os.environ.get('MONGODBTESTER_KEY')
@@ -334,6 +338,7 @@ class TestMarginGeekAPI:
                     else:
                         raise Exception('Scan Submission Failed')
                 except Exception as ex:
+                    print(f'Scan submission error: {ex}')
                     completion_pass = False
                     completion_comment = f"Exception on submission or tracking: {str(ex)}"
                 print(f'status passed. {status}')
@@ -385,10 +390,10 @@ class TestMarginGeekAPI:
 
                     pt2_total_found = len(list(set(pt2_total_found)))
                     if pt2_total_rows > 0:
-                        search_p2recall = pt2_search_found / pt2_total_rows
-                        rerank_p2recall = pt2_rerank_found / pt2_total_rows
-                        code_p2recall   = pt2_code_found / pt2_total_rows
-                        total_p2recall  = pt2_total_found / pt2_total_rows
+                        search_p2recall = round(pt2_search_found / pt2_total_rows,3)
+                        rerank_p2recall = round(pt2_rerank_found / pt2_total_rows, 3)
+                        code_p2recall   = round(pt2_code_found / pt2_total_rows, 3)
+                        total_p2recall  = round(pt2_total_found / pt2_total_rows, 3)
 
                     search_p2_threshold = 0.65 if pt2_total_rows > 20 else 0.6 if pt2_total_rows > 10 else .5
                     rerank_p2_threshold = 0.45 if pt2_total_rows > 20 else 0.4 if pt2_total_rows > 10 else .3
@@ -455,12 +460,12 @@ class TestMarginGeekAPI:
                     pass_match_code_recall = True
 
                     if (ct_aisearch + ct_codesearch) > 0:
-                        match_completion = (accurate_ct_aisearch + accurate_ct_codesearch) / (ct_aisearch + ct_codesearch)
+                        match_completion = round((accurate_ct_aisearch + accurate_ct_codesearch) / (ct_aisearch + ct_codesearch),3)
                         pass_match_completion = True
                     if ct_aisearch > 0:
-                        match_ai_recall = accurate_ct_aisearch / ct_aisearch
+                        match_ai_recall = round(accurate_ct_aisearch / ct_aisearch,3)
                     if ct_codesearch > 0:
-                        match_code_recall = accurate_ct_codesearch / ct_codesearch
+                        match_code_recall = round(accurate_ct_codesearch / ct_codesearch,3)
 
                     match_comments = (
                         f"Code match recall of {match_code_recall} with n = {ct_codesearch}. "
@@ -575,7 +580,11 @@ class TestMarginGeekAPI:
                         )
                         test_failures.append(failure_msg)
                         print(failure_msg)
-                        
+                else:
+                    try:
+                        assert completion_pass, f"Batch failed to complete: {completion_comment}" 
+                    except AssertionError as e:
+                        test_failures.append(f'Test case {scan_name} failed: \n Customer ID: {customer_id} \n Settings: {settings} \n Error: {str(e)}')
             except Exception as e:
                 test_failures.append(f"Test case '{scan_name}' failed with exception: {str(e)}")
                 print(f"Error processing test case {scan_name}: {str(e)}")
