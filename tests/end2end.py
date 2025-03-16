@@ -13,14 +13,14 @@ import requests
 from pymongo.server_api import ServerApi
 import argparse
 
-from tools import read_csv_from_server, convert_to_number, yyyymmdd_date
+from testing_tools import read_csv_from_server, convert_to_number, yyyymmdd_date
 from tests.test_api import update_balance
 #premium_customer_id = "cus_QcwLkv0EVqYtYs"      # It is okay to update the balance / rows for these customers, but only these customers
 #free_customer_id = "cus_QziFoGqYoOjJKb"         # It is okay to update the balance / rows for these customers, but only these customers
 #premium_customer_id_prod = "cus_QdBn80R17gnunh" # It is okay to update the balance / rows for these customers, but only these customers
 #free_customer_id_prod = "cus_QzjqmsH9lWZ5Zn"    # It is okay to update the balance / rows for these customers, but only these customers
-from context.globals import free_customer_id_prod, premium_customer_id_prod, premium_client_id_prod, free_client_id_prod
-from context.globals import free_customer_id_dev, premium_customer_id_dev, premium_client_id_dev, free_client_id_dev
+from test_context.globals import free_customer_id_prod, premium_customer_id_prod, premium_client_id_prod, free_client_id_prod
+from test_context.globals import free_customer_id_dev, premium_customer_id_dev, premium_client_id_dev, free_client_id_dev
 
 
 def delete_pg(asin,db,display_deleted_count = True):
@@ -33,7 +33,14 @@ def delete_pg(asin,db,display_deleted_count = True):
         print(f"Deleted {deleted_count} records for {asin}")
     
 class TestMarginGeekScanner:
-    """Test suite for MarginGeek scanner, end to end"""
+    """Test suite for MarginGeek scanner, end to end
+    
+    
+    command line args
+    - app_mode
+    - mini
+    - location: allows you to test dev system or local system, from local terminal
+    """
     
     @pytest.fixture(autouse=True)
     def setup(self,command_line_args):

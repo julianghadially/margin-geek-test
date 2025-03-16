@@ -23,6 +23,7 @@ import requests
 import pymongo
 from pymongo.server_api import ServerApi
 from time import time, sleep
+from test_context.architecture import dev_api_host
 
 #os.environ['TEST_APP_MODE'] = 'dev'
 mongo_key = os.environ.get('MONGODBTESTER_KEY')
@@ -44,7 +45,7 @@ latest_qa_cost = 0.01
 latest_expedited_cost = 0.005
 
 # It is okay to update the balance / rows for these customers, but only these customers:
-from context.globals import premium_customer_id_dev, free_customer_id_dev, premium_customer_id_prod, free_customer_id_prod      
+from test_context.globals import premium_customer_id_dev, free_customer_id_dev, premium_customer_id_prod, free_customer_id_prod      
 
 
 #=====================================
@@ -102,7 +103,7 @@ class TestMarginGeekAPI:
         else:
             print('Running tests in dev')
             self.is_dev = True
-            self.api_host = 'https://dev-api.margingeek.com:444' #'http://127.0.0.1:5000'  # Change to https://dev-api.margingeek.com:444 for dev testing
+            self.api_host = dev_api_host # 'https://dev-api.margingeek.com:444' #'http://127.0.0.1:5000'  # Change to https://dev-api.margingeek.com:444 for dev testing
             self.headers = {"Origin": "https://margin-geek-portal.vercel.app"}
             self.test_customer_id = premium_customer_id_dev # Use a test customer ID
             self.test_client_id = "9002"
